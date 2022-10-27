@@ -1,0 +1,57 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: recommend-online
+
+  datasource:
+    url: jdbc:mysql://${sql_addr:127.0.0.1}:${sql_port:3306}/recommend?relaxAutoCommit=true&zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&autoReconnect=true
+    driverClassName: com.mysql.cj.jdbc.Driver
+    userName: ${sql_username:root}
+    password: ${sql_password:123456}
+    #配置数据库连接池
+    pool:
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+
+  #日期类型转换
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+
+  #kafka
+  kafka:
+    producer:
+      servers: 192.168.111.128:9092
+      retries: 0
+      batchSize: 4096
+      lingerMs: 1
+      bufferMemory: 40960
+      acks: all
+    enable: yes
+    consumer:
+      autoCommit: false
+      autoCommitInterval: 5000
+      autoOffsetReset: earliest
+      concurrency: 1
+      groupId: kafkaDemo
+      pollTimeout: 3000
+      servers: 172.16.100.200:9092
+      sessionTimeout: 100
+      maxPollRecords: 1
+
+redis:
+  host: 192.168.111.128
+  port: 6379
+
+

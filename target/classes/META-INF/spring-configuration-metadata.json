@@ -1,0 +1,143 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource",
+      "type": "com.linxx.recommend.config.database.dataSourceProperties",
+      "sourceType": "com.linxx.recommend.config.database.dataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.pool",
+      "type": "com.linxx.recommend.config.database.connectionPoolProperties",
+      "sourceType": "com.linxx.recommend.config.database.connectionPoolProperties"
+    },
+    {
+      "name": "spring.kafka.producer",
+      "type": "com.linxx.recommend.config.kafka.kafkaProducerProperties",
+      "sourceType": "com.linxx.recommend.config.kafka.kafkaProducerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.datasource.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.linxx.recommend.config.database.dataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.password",
+      "type": "java.lang.String",
+      "sourceType": "com.linxx.recommend.config.database.dataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.pool.initial-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.linxx.recommend.config.database.connectionPoolProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.datasource.pool.max-active",
+      "type": "java.lang.Integer",
+      "sourceType": "com.linxx.recommend.config.database.connectionPoolProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.datasource.pool.max-pool-prepared-statement-per-connection-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.linxx.recommend.config.database.connectionPoolProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.datasource.pool.max-wait",
+      "type": "java.lang.Integer",
+      "sourceType": "com.linxx.recommend.config.database.connectionPoolProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.datasource.pool.min-evictable-idle-time-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "com.linxx.recommend.config.database.connectionPoolProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.datasource.pool.min-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.linxx.recommend.config.database.connectionPoolProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.datasource.pool.pool-prepared-statements",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.linxx.recommend.config.database.connectionPoolProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.datasource.pool.test-on-borrow",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.linxx.recommend.config.database.connectionPoolProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.datasource.pool.test-on-return",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.linxx.recommend.config.database.connectionPoolProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.datasource.pool.test-while-idle",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.linxx.recommend.config.database.connectionPoolProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.datasource.pool.time-between-eviction-runs-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "com.linxx.recommend.config.database.connectionPoolProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.datasource.pool.validation-query",
+      "type": "java.lang.String",
+      "sourceType": "com.linxx.recommend.config.database.connectionPoolProperties"
+    },
+    {
+      "name": "spring.datasource.url",
+      "type": "java.lang.String",
+      "sourceType": "com.linxx.recommend.config.database.dataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.user-name",
+      "type": "java.lang.String",
+      "sourceType": "com.linxx.recommend.config.database.dataSourceProperties"
+    },
+    {
+      "name": "spring.kafka.producer.acks",
+      "type": "java.lang.String",
+      "sourceType": "com.linxx.recommend.config.kafka.kafkaProducerProperties"
+    },
+    {
+      "name": "spring.kafka.producer.batch-size",
+      "type": "java.lang.String",
+      "sourceType": "com.linxx.recommend.config.kafka.kafkaProducerProperties"
+    },
+    {
+      "name": "spring.kafka.producer.buffer-memory",
+      "type": "java.lang.String",
+      "sourceType": "com.linxx.recommend.config.kafka.kafkaProducerProperties"
+    },
+    {
+      "name": "spring.kafka.producer.linger-ms",
+      "type": "java.lang.String",
+      "sourceType": "com.linxx.recommend.config.kafka.kafkaProducerProperties"
+    },
+    {
+      "name": "spring.kafka.producer.retries",
+      "type": "java.lang.String",
+      "sourceType": "com.linxx.recommend.config.kafka.kafkaProducerProperties"
+    },
+    {
+      "name": "spring.kafka.producer.servers",
+      "type": "java.lang.String",
+      "sourceType": "com.linxx.recommend.config.kafka.kafkaProducerProperties"
+    }
+  ],
+  "hints": []
+}
